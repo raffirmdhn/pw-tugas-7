@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#header {
+  display: flex;
+  background-color: #114a82;
+  color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  height: 10dvh;
+  padding: 0 100px;
+
+  & .left img {
+    width: 250px;
+  }
+
+  .right ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: orangered;
+      border-bottom: 1px solid orangered;
+    }
+  }
+}
+
+#banner {
+  width: 100%;
+  height: 90dvh;
+  background-image: url("https://nurulfikri.ac.id/wp-content/uploads/slider/cache/b9cdbba1a0e7c5c45cc35ca06eaebf93/Banner-Web-1-scaled.webp");
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .tagline-container {
+    border-radius: 5px;
+    width: fit-content;
+    overflow: hidden;
+    margin-left: 3rem;
+
+    .tagline {
+      background-color: #004582;
+      padding: 15px;
+      width: 500px;
+      color: #fff;
+    }
+
+    .tagline:nth-child(2) {
+      background-color: #f37021;
+    }
+  }
+}
+
+#prodi {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-image: url(https://nurulfikri.ac.id/wp-content/uploads/2022/07/bbg-1-1.png?id=4574);
+  padding: 30px;
+
+  .card-container {
+    width: 85%;
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+
+    .card {
+      flex: 1 1 calc(30% - 10px);
+      min-height: 250px;
+      border-radius: 5px;
+      background-color: #f5f5f5;
+      padding: 30px;
+
+      h1 {
+        font-size: 2rem;
+        font-weight: 400;
+        color: #464646;
+        line-height: 2rem;
+        margin-bottom: 20px;
+      }
+
+      p {
+        color: #4b4b4b;
+        line-height: 1.3rem;
+      }
+
+      button {
+        margin-top: 30px;
+        outline: 0;
+        border: 2px solid #08c;
+        background-color: rgba(255, 255, 255, 0.37);
+        padding: 13px 20px;
+        color: #08c;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: .3s;
+      }
+
+      button:hover {
+        background-color: #08c;
+        color: #fff;
+      }
+    }
+  }
+}

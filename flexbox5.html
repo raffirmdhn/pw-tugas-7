@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Flexbox 5</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        width: 100%;
+        height: 100dvh;
+      }
+
+      main {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+        color: #fff;
+      }
+
+      .row {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        gap: 20px;
+      }
+
+      .col {
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      .aside {
+        width: 40%;
+        background-color: cornsilk;
+        color: #4e4e4e;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .article .list {
+        height: 200px;
+        background-color: cornsilk;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #4e4e4e;
+      }
+    </style>
+  </head>
+  <body>
+    <main style="background-color: #808080">
+      <div class="row" style="height: 20%; text-align: center">
+        <div class="col" style="background-color: burlywood"><h3>Header</h3></div>
+      </div>
+      <div class="row">
+        <div class="col aside">Aside</div>
+        <div class="col" style="background-color: #ff000021">
+          <div
+            class="row article"
+            style="flex-direction: column; align-items: center; justify-content: end">
+            <h3 style="color: #fff">Article</h3>
+            <div class="row" style="height: fit-content">
+              <div class="col list">Image</div>
+              <div class="col list">Image</div>
+              <div class="col list">Image</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 20%; background-color: burlywood; text-align: center">
+        <div class="col">Footer</div>
+      </div>
+    </main>
+  </body>
+</html>

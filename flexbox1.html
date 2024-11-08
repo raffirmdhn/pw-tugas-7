@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Flexbox 1</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      header {
+        background-color: antiquewhite;
+        padding: 10px 20px;
+      }
+
+      header ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+      }
+
+      header ul li {
+        margin-inline: 1em;
+      }
+
+      header .logo {
+        margin-right: auto;
+      }
+
+      .logo img {
+        width: 50px;
+      }
+
+      main {
+        padding: 20px;
+      }
+      
+      main li {
+        margin: 0 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li class="logo">
+          <img
+            src="https://yt3.googleusercontent.com/4IHWdR_Evur4HaIrVogk6I1PC2imTFr6PVXjMAd3ILCSCHDdFTnpUQ0uCWlk4t59yZK2RsdwNg=s900-c-k-c0x00ffffff-no-rj"
+            alt="logo" />
+        </li>
+        <li>About</li>
+        <li>Blog</li>
+        <li>Shop</li>
+        <li>Contact</li>
+      </ul>
+    </header>
+    <main>
+      <h3>Program Studi STT-NF:</h3>
+      <ul>
+        <li>Sistem Informasi</li>
+        <li>Teknik Informatika</li>
+        <li>Bisnis Digital</li>
+      </ul>
+    </main>
+  </body>
+</html>
